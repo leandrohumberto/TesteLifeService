@@ -1,0 +1,336 @@
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://impl.business.life.cardif.com.br/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns2="http://schemas.xmlsoap.org/soap/http" xmlns:ns1="http://api.business.life.cardif.com.br/ClientService" name="ClientServiceBeanService" targetNamespace="http://impl.business.life.cardif.com.br/">
+  <wsdl:import location="./ClientService.wsdl" namespace="http://api.business.life.cardif.com.br/ClientService">
+    </wsdl:import>
+  <wsdl:binding name="ClientServiceBeanServiceSoapBinding" type="ns1:ClientService">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="listPhones">
+      <soap:operation soapAction="/life-service/ClientServiceBeanService/listPhones" style="document"/>
+      <wsdl:input name="listPhones">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="listPhonesResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDefaultPhone">
+      <soap:operation soapAction="/life-service/ClientServiceBeanService/getDefaultPhone" style="document"/>
+      <wsdl:input name="getDefaultPhone">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getDefaultPhoneResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="alterClientData">
+      <soap:operation soapAction="/life-service/ClientServiceBeanService/alterClientData" style="document"/>
+      <wsdl:input name="alterClientData">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="alterClientDataResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listContacts">
+      <soap:operation soapAction="/life-service/ClientServiceBeanService/listContacts" style="document"/>
+      <wsdl:input name="listContacts">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="listContactsResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertOrReturnClient">
+      <soap:operation soapAction="/life-service/ClientServiceBeanService/insertOrReturnClient" style="document"/>
+      <wsdl:input name="insertOrReturnClient">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="insertOrReturnClientResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listAddress">
+      <soap:operation soapAction="/life-service/ClientServiceBeanService/listAddress" style="document"/>
+      <wsdl:input name="listAddress">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="listAddressResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="findByPrimaryKey">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="findByPrimaryKey">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="findByPrimaryKeyResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="validatePostalCode">
+      <soap:operation soapAction="/life-service/ClientServiceBeanService/validatePostalCode" style="document"/>
+      <wsdl:input name="validatePostalCode">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="validatePostalCodeResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="findBySSNAppDomain">
+      <soap:operation soapAction="/life-service/ClientServiceBeanService/findBySSNAppDomain" style="document"/>
+      <wsdl:input name="findBySSNAppDomain">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="findBySSNAppDomainResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listPaymentLogsPuf">
+      <soap:operation soapAction="/life-service/ClientServiceBeanService/listPaymentLogsPuf" style="document"/>
+      <wsdl:input name="listPaymentLogsPuf">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="listPaymentLogsPufResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveBankData">
+      <soap:operation soapAction="/life-service/ClientServiceBeanService/retrieveBankData" style="document"/>
+      <wsdl:input name="retrieveBankData">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="retrieveBankDataResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listSMSHistory">
+      <soap:operation soapAction="/life-service/ClientServiceBeanService/listSMSHistory" style="document"/>
+      <wsdl:input name="listSMSHistory">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="listSMSHistoryResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="findByPrimaryKeyStringId">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="findByPrimaryKeyStringId">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="findByPrimaryKeyStringIdResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="count">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="count">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="countResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listGrid">
+      <soap:operation soapAction="/life-service/ClientServiceBeanService/listGrid" style="document"/>
+      <wsdl:input name="listGrid">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="listGridResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listPagination">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="listPagination">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="listPaginationResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLastMailAddress">
+      <soap:operation soapAction="/life-service/ClientServiceBeanService/getLastMailAddress" style="document"/>
+      <wsdl:input name="getLastMailAddress">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getLastMailAddressResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listCallHistory">
+      <soap:operation soapAction="/life-service/ClientServiceBeanService/listCallHistory" style="document"/>
+      <wsdl:input name="listCallHistory">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="listCallHistoryResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="findClientForOmniChannel">
+      <soap:operation soapAction="/life-service/ClientServiceBeanService/findClientForOmniChannel" style="document"/>
+      <wsdl:input name="findClientForOmniChannel">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="findClientForOmniChannelResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="save">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="save">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="saveResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listPhoneTypes">
+      <soap:operation soapAction="/life-service/ClientServiceBeanService/listPhoneTypes" style="document"/>
+      <wsdl:input name="listPhoneTypes">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="listPhoneTypesResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="remove">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="remove">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="removeResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="findById">
+      <soap:operation soapAction="/life-service/ClientServiceBeanService/findById" style="document"/>
+      <wsdl:input name="findById">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="findByIdResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listAll">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="listAll">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="listAllResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="saveAggregate">
+      <soap:operation soapAction="/life-service/ClientServiceBeanService/saveAggregate" style="document"/>
+      <wsdl:input name="saveAggregate">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="saveAggregateResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listAddressesHistories">
+      <soap:operation soapAction="/life-service/ClientServiceBeanService/listAddressesHistories" style="document"/>
+      <wsdl:input name="listAddressesHistories">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="listAddressesHistoriesResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listSources">
+      <soap:operation soapAction="/life-service/ClientServiceBeanService/listSources" style="document"/>
+      <wsdl:input name="listSources">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="listSourcesResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listPaymentLogs">
+      <soap:operation soapAction="/life-service/ClientServiceBeanService/listPaymentLogs" style="document"/>
+      <wsdl:input name="listPaymentLogs">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="listPaymentLogsResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="findBySSN">
+      <soap:operation soapAction="/life-service/ClientServiceBeanService/findBySSN" style="document"/>
+      <wsdl:input name="findBySSN">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="findBySSNResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="physicalRemove">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="physicalRemove">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="physicalRemoveResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="list">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="list">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="listResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="findAddressBYPostalCode">
+      <soap:operation soapAction="/life-service/ClientServiceBeanService/findAddressBYPostalCode" style="document"/>
+      <wsdl:input name="findAddressBYPostalCode">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="findAddressBYPostalCodeResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listBadDebt">
+      <soap:operation soapAction="/life-service/ClientServiceBeanService/listBadDebt" style="document"/>
+      <wsdl:input name="listBadDebt">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="listBadDebtResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="findByPrimaryKeyLongId">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="findByPrimaryKeyLongId">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="findByPrimaryKeyLongIdResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listBillingLogs">
+      <soap:operation soapAction="/life-service/ClientServiceBeanService/listBillingLogs" style="document"/>
+      <wsdl:input name="listBillingLogs">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="listBillingLogsResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="validPostalCodeOfMailAddress">
+      <soap:operation soapAction="/life-service/ClientServiceBeanService/validPostalCodeOfMailAddress" style="document"/>
+      <wsdl:input name="validPostalCodeOfMailAddress">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="validPostalCodeOfMailAddressResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ClientServiceBeanService">
+    <wsdl:port binding="tns:ClientServiceBeanServiceSoapBinding" name="ClientServiceBeanPort">
+      <soap:address location="https://soaqa.cardif.com.br/life-service/ClientServiceBeanService"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
